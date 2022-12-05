@@ -1,0 +1,290 @@
+/* 登录 */
+#black_mask{
+    width: 100%;
+    height:100%;
+    background-color:#000;
+    opacity: 0.2;
+    position:absolute;
+    left:0%;
+    top:0%;
+    z-index:999;
+    display:none;
+}
+.popup_login{
+    position: fixed; 
+    z-index: 100000; 
+    top: 146px;
+    margin: 10px; 
+    left: 469px;
+    width: 560px; 
+    height: 410px; 
+    overflow: hidden;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.popup_login>.popup_hd>.popup_tit>.popup_tit_item{
+    font-size:16px;
+    font-style: normal;
+    color: #333;
+    display:inline-block;
+    width:70px;
+    text-align: center;
+    margin:0px 70px;
+}
+.popup_login>.popup_hd>.popup_tit>.tit_top{
+    color:#31c27c;
+}
+.popup_login>.popup_hd>.popup_tit>.pop_tit_hover{
+    color:#31c27c;
+}
+.popup_hd{
+    background:#fff;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+.popup_close{
+    position:absolute;
+    width:12px;
+    height:12px;
+    background:url(../img/logo/icon_popup.png);
+    background-position: 0px -200px;
+    right:18px;
+    top:18px;
+}
+.login_body{
+    background-color:#fff;
+    width:100%;
+    height:380px;
+}
+.login_body>*{
+    font-family: helvetica,arial,微软雅黑,华文黑体;
+    margin-bottom: 30px;
+}
+.login_body>.login_body_tit{
+    text-align: center;
+    font-size:20px;
+    color:#333;
+    height:26px;
+    margin-bottom: 16px;
+    padding-top: 20px;
+}
+
+.login_body>.login_body_a{
+    height:42px;
+    text-align:center;
+    font-size:16px;
+    line-height: 21px;
+    color:#333;
+    padding-top: 15px;
+}
+.login_body>.login_body_a>.link_tips{
+    font-size:16px;
+    line-height: 21px;
+    color:#3481cf;
+}
+.login_img_body{
+    width:250px;
+    height:110px;
+    margin:auto;
+    margin-bottom:100px;
+}
+.login_img_body>.safe_login>div{
+    width:100px;
+    height:100px;
+    margin:10px;
+    display: inline-block;
+    cursor:pointer;
+}
+.login_img_body>.safe_login>.login_img{
+    position:absolute;
+    width:160px;
+    height:200px;
+    bottom:70px;
+    right:90px;
+    display: none;
+    background-image: url("../img/login/small_24_tiny.png");
+}
+.login_img_body>.safe_login>div>img{
+    width: 100px;
+}
+.bottom_hide{
+    height:18px;
+    line-height: 18px;
+}
+.auto_login{
+    font-size: 12px;
+}
+.login_link{
+    color:#999;
+}
+.login_check{
+    display:inline-block;
+    height:18px;
+    position:absolute;
+    left:10px;
+    bottom:15px;
+}
+.login_check>.auto_login_checked,.login_check>.auto_login_unchecked{
+    background:url("../img/login/icon_3_tiny.png");
+    width:18px;
+    height:18px;
+    display:inline-block;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+.login_check>.auto_login_checked{
+    background-position:-92px -163px;
+}
+.login_check>.auto_login_unchecked{
+    background-position:-74px -163px;
+}
+.auto_login{
+    display: inline-block;
+    line-height: 18px;
+    margin-left:5px;
+    cursor:pointer;
+}
+.bottom_hide>a{
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    margin: 0 5px;
+
+}
+.bottom_hide>a:hover{
+    text-decoration: underline;
+}
+.bottom_hide{
+    text-align: right;
+}
+.dotted{
+    font-size:12px;
+    color: #666;
+}
+/* 账号登录表单 */
+#loginform{
+    width:272px;
+    height:150px;
+    position:relative;
+}
+#loginform>input{
+    width: 258px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    height: 40px;
+    border-radius:5px;
+    padding: 10px 0 10px 10px;
+    line-height: 18px;
+    border:1px #ddd solid;
+    margin-bottom:17px;
+    background: 0 0;
+    color: #333;
+    font-family: Verdana,Tahoma,Arial;
+    font-size: 16px;
+}
+#loginform>#form_submit{
+    background-color: #86ce2f;
+    color:#fff;
+}
+#loginform>#form_submit:hover{
+    cursor:pointer;
+}
+.clear_qq,.clear_upwd{
+    display:block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-image:url(../img/login/icon_3_tiny.png);
+    background-position: -116px -160px;
+}
+.clear_upwd{
+    right: 15px;
+    top: 67px;
+}
+/* 登陆完之后 */
+.login_pic{
+    position: absolute;
+    display:inline-block;
+    width:40px;
+    height:40px;
+    border-radius:50px;
+    right:285px;
+    top: 26px;
+    background-size: 100%;
+    /* display:none;  */
+}
+.user_info{
+    width: 238px;
+    background:#fff;
+    transition: max-height .6s ease-out .6s;
+    overflow: hidden;
+    border: 1px solid #f2f2f2;
+    font-size: 13px;
+    height: 0px;
+    opacity: 0;
+    position:absolute;
+    top:65px;
+    left:-25px;
+    padding-left:15px!important;
+    z-index:9999;
+}
+.in{
+    height:312px;
+    opacity: 1;
+}
+/* 头像 */
+.user_top{
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: left;
+}
+.user_pic{
+    width: 70px;
+    height:70px;
+    border-radius:50px;
+    display:inline-block;
+}
+.user_name{
+    display:inline-block;
+    position:relative;
+    top:-25px;
+    left:10px;
+    color:#333;
+}
+.user_name:hover{
+    color:#31c27c;
+}
+.user_info>li>.user_item{
+    position: relative;
+    margin-bottom: 16px;
+    font-size: 15px;
+    width: 248px;
+    text-align: left;
+}
+.user_item>div,.user_item{
+    color:#333;
+}
+.greenA{
+    background:#31c27c;
+    color:#fff;
+    padding:5px;
+    line-height:20px;
+    font-size:13px;
+    cursor:pointer;
+    width:70px;
+    height:30px;
+    border-radius:2px;
+    margin-left:20px;
+}
+/* 注册 */
+.link:hover{
+    cursor: pointer;
+}

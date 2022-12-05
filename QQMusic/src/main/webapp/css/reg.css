@@ -1,0 +1,243 @@
+
+@keyframes bj{
+    0%{
+        background-image:url(../img/reg/01-1.jpg);
+    }
+    28%{
+        background-image:url(../img/reg/01-1.jpg);
+    }
+    33%{
+        background-image:url(../img/reg/01-3.jpg);
+    }
+    60%{
+        background-image:url(../img/reg/01-3.jpg);
+    }
+    66%{
+        background-image:url(../img/reg/01-4.jpg);
+    }
+    94%{
+        background-image:url(../img/reg/01-4.jpg);
+    }
+    100%{
+        background-image:url(../img/reg/01-1.jpg);
+    }
+}
+*{
+    font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+
+}
+/* 头部右侧ul */
+.top_ul{
+    width:480px;
+    height:53px;
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    top:0px;
+    right:5px;
+}
+.top_ul>li{
+    margin:20px 40px 0 0; 
+}
+.li1{
+    line-height: 47px;
+    font-size: 14px;
+    
+    color:#666;
+}
+.qqlh{width:120px;
+}
+.qqlh>div{
+    border-radius: 6px;
+    background: #f54444;
+    background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;
+    line-height: 24px;
+    height:24px;
+    font-size: 14px;
+    margin: 10px 0 0 5px;
+    padding: 0 10px 0 24px;
+    color: #fff;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    left:-24px;
+    top:0px;
+    font-family: -apple-system,"Helvetica Neue"}
+.qqlh>img{
+    position: relative;
+    float:left;
+    z-index:10;
+}
+.qqyx>img{
+    vertical-align: middle;
+}
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100px;
+    height:40px;
+    background-size: 36px 43px;
+    background: url(../img/reg/logo.png) no-repeat;
+    z-index: 2;
+    height: 43px;
+    line-height: 43px;
+    padding-left: 46px;
+    margin-left: 30px;
+    margin-top: 18px;
+    font-size: 36px;
+    display: block;
+    color: #000;
+}
+
+body .side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 480px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bj 15s linear infinite;
+    display:inline-block;
+}
+.side_right{
+    float: right;
+
+}
+.reg_body{
+    width:480px;
+    position:relative;
+    top:150px;
+    margin:auto;
+    height:760px;
+}
+.welcome{
+    width:100%;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.reg_tit{
+    font-size: 28px;
+    margin-bottom: 64px;
+    line-height: 1.2;
+    color: #333;
+}
+.reg_input{
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    background: 0 0;
+    text-align: left;
+    font-size: 20px;
+    width: 480px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.reg_input:hover{
+    border-color: #777;
+}
+.reg_input:focus{    
+    border-color: #549df8;
+    outline: 0;
+    color:black;
+}
+.reg_n,.reg_p,.req_ph{
+    position: relative;
+}
+.reg_p{
+    margin-top:20px;
+}
+.req_ph{
+    margin-top:20px;
+}
+.req_ph_i{
+    margin-top:10px;
+}
+.error-tips{
+    /* display:none; */
+    background-image: url(../img/reg/error.png); 
+    background-repeat:  no-repeat;
+    padding: 0 0 0 24px;
+    color: #ff5b5b;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+    margin-top:6px;
+    height:0px;
+    transition: all 0.2s linear;
+}
+.input_img{
+    width:20px;
+    height:15px;
+    background-image: url("../img/reg/tick.png");
+    position: absolute;
+    right:10px;
+    top:16px;
+    display:none;
+}
+.input-tips {
+    font-size: 14px;
+    height: 20px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    display:inline-block;
+}
+.code{
+    width: 154px;
+}
+.send_code{
+    width: 112px;
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg,#398bff,#3083ff);
+    float: right;
+    width: 307px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+.send_code:hover{
+    background-color: #3580eb;
+    background-image: linear-gradient(0deg,#3580eb,#2c79eb);
+}
+.submit {
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg,#398bff,#3083ff);
+    width: 478px;
+    height: 55px;
+    margin: 40px 0 8px;
+    font-size: 24px;
+    outline: 0;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: #3580eb;
+    background-image: linear-gradient(0deg,#3580eb,#2c79eb);
+}
+/* 条款 */
+.tiaokuan{
+    height:20px;
+    font-size: 13px;
+    color: #aaa;
+}
+.tiaokuan>img{
+    vertical-align: middle;
+    position:relative;
+    top:-2px;
+}

@@ -1,0 +1,428 @@
+.top_icon{
+    width: 78px;
+    height: 21px;
+    position:absolute;
+    left: 20px;
+    top: 20px;
+    z-index:100;
+}
+.top_icon>img{
+    width:78px;
+    height: 21px;
+    opacity: .3;
+}
+.top_icon>img:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+.play_mask{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.35);
+}
+.play_mask_img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(50px);
+}
+.player_body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+.player_bd{
+    width:1400px;
+    height:97%;
+    
+    display:inline-block;
+    padding-top:100px;
+}
+.toolbar{
+    width:747px;
+    height:38px;
+    display:inline-block;
+}
+.toolbar>a{
+    text-align: center;
+    display: inline-block;
+    height: 38px;
+    line-height:36px;
+    font-size:14px;
+    color:#fff;
+    padding-left:23px;
+    padding-right:23px;
+    border:1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    opacity: 0.68;
+}
+.toolbar>a>i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/logo/icon_sprite.png");
+    position:relative;
+    margin-right:5px; 
+    top:2px;
+}
+.toolbar>a:hover{
+    opacity: 1;
+    border:1px solid rgba(255,255,255,1);
+}
+.icon_like{
+    background-position: -60px -20px;
+}
+.icon_add{
+    background-position: -20px -20px;
+}
+.icon_down{
+    background-position: -40px -20px;
+}
+.icon_delete{
+    background-position: -80px -20px;
+}
+.icon_clear{
+    background-position: -100px -20px;
+}   
+.song_list{
+    width:1000px;
+    height:660px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.song_title{
+    width:100%;
+    height:50px;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+.song_title>li{
+    display: inline-block;
+    line-height: 50px;
+    font-size:14px;
+    color:rgba(255,255,255,0.7);
+}
+.songlist_edit{
+    width: 16px;
+    height:16px;
+    margin-right:30px;
+}
+.songlist_checkbox{
+    width: 16px;
+    height:16px;
+    display: inline-block;
+    border:1px solid rgba(255,255,255,0.6);
+    background:transparent;
+    position:relative;
+    top:2px;
+}
+.songlist_checkbox:hover{
+    border:1px solid rgba(255,255,255,1);
+}
+.songlist_header_name,.songlist_list_name{
+    height: 50px;
+    width:550px;
+}
+.songlist_header_author,.songlist_list_author{
+    height:50px;
+    width:220px;
+}
+.songlist_header_time,.songlist_list_time{
+    width:100px;
+    height:50px;
+}
+#songList{
+    width:950px;
+    height:660px;
+    overflow:hidden;
+}
+.songlist_list{
+    width:950px;
+    height:1000px;
+    position:relative;
+}
+.songlist_list>li>div>div{
+    display: inline-block;
+    line-height: 50px;
+    font-size:14px;
+    color:rgba(255,255,255,0.7);
+}
+.songlist_list>li{
+    display: inline-block;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+.list_number{
+    display: inline-block;
+    width:30px;
+    height:50px;
+    position: absolute;
+    right:0px;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+    color:rgba(255,255,255,0.7);
+    text-align: right;
+    line-height: 50px;
+}
+.songlist_show>img{
+    width:10px;
+    height:10px;
+}
+.nonegif{
+    display: none;
+}
+.songlist_show{
+    width:50px;
+    height:50px;
+    display:inline-block;
+    position:relative;
+}
+/* 右边 */
+.song_pic{
+    width:340px;
+    height:300px;
+    position: absolute;
+    right:77px;
+    top:100px;
+}
+.song_pic_a{
+    width: 186px;
+    height:186px;
+    margin-left: 77px;
+    margin-right:77px;
+}
+.song_pic_a>img{
+    width:186px;
+    height:186px;
+}
+.song_pic_bg{
+    width:201px;
+    height:180px;
+    background-image: url(../img/myMusic/album_cover_player.png);
+    position:absolute;
+    right:52px;
+    top:6px;
+}
+.song_pic_div{
+    margin-top:7px;
+    width:100%;
+    height:28px;
+    text-align: center;
+    font-size:14px;
+    line-height: 28px;
+    color:rgba(255,255,255,0.7);
+}
+/* 歌词 */
+.song_lrc{
+    width:340px;
+    height:400px;  
+    position: absolute;
+    right:77px;
+    top:400px;
+    overflow: hidden;
+}
+.qrc_ctn{
+    width:340px;
+    height:450px;
+    position: absolute;
+}
+.qrc_ctn>p{
+    display: block;
+    text-align: center;
+    color:rgba(255,255,255,0.6);
+    margin-top:15px;
+    font-size:13px;
+}
+/* 全选 */
+.box_click{
+    background-image: url("../img/logo/icon_sprite.png");
+    background-position: -60px -80px;
+    border:1px solid rgba(255,255,255,1);
+}
+.songlist_list_name:hover{
+    color:rgba(255,255,255,1);
+    cursor: pointer;
+}
+/* 播放 */
+.song_ctrl{
+    width:1600px;
+    height:50px;
+    position: absolute;
+    bottom:50px;
+    z-index:100;
+    transition: all 0.5s linear;
+}
+.song_ctrl>a{
+    display:inline-block;
+    background-image: url("../img/myMusic/player.png");
+
+}
+.song_ctrl>a:hover{
+    cursor:pointer;
+}
+.song_prev,.song_next{
+    width: 19px;
+    height:20px;
+    position:relative;
+    top:5px;
+    margin:10px;
+}
+.song_prev{
+    background-position: 0 -30px;
+    left:10px;
+}
+.song_next{
+    background-position: 0 -52px;
+    left: 80px;
+}
+.song_play{
+    width: 21px;
+    height:29px;
+    background-position: -30px 0;
+    position:relative;
+    left:45px;
+}
+.song_pause{
+    width: 21px;
+    height:29px;
+    background-position: 0 0;
+    position:relative;
+    left:45px;
+}
+.song_text{
+    width:900px;
+    height:21px;
+    position: relative;
+    left:220px;
+    top:-40px;
+    color:rgba(255,255,255,0.6);
+    font-size:14px;
+}
+.song_text>a{
+    display:inline-block;
+    color:rgba(255,255,255,0.6);
+    font-size:14px;
+}
+.song_text_song:hover,.song_text_singer:hover{
+    color:white;
+    cursor:pointer;
+}
+.song_text_song{
+    float:left;
+}
+.song_text_time{
+    float:right;
+}
+.player_progress_inner{
+    width:900px;
+    height:2px;
+    border:1px solid rgba(255,255,255,0.4);
+    position: relative;
+    left:220px;
+    top:-35px;
+}
+.player_progress_dot{
+    border-radius:50px;
+    display:inline-block;
+    border:4px solid rgba(255,255,255,0.7);
+    position:relative;
+    top:-12px;
+}
+.player_progress_dot:hover{
+    cursor: pointer;
+    border: 5px solid white;
+}
+.song_ctrl_btn{
+    width: 450px;;
+    height:50px;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+.song_ctrl_btn>a{
+    display: inline-block;
+    margin:10px;
+    background-image: url("../img/myMusic/player.png");
+    opacity: 0.8;
+}
+.song_ctrl_btn>a:hover{
+    opacity:1;
+    cursor:pointer;
+}
+.btn_style{
+    width:26px;
+    height:25px;
+    background-position: 0 -205px;
+}
+.btn_unlike{
+    width:23px;
+    height:21px;
+    background-position:  0 -96px;
+}
+.btn_like{
+    width:23px;
+    height:21px;
+    background-position: -30px -96px;
+}
+.btn_down{
+    width:22px;
+    height:21px;
+    background-position: 0 -120px;
+}
+.btn_danmu{
+    width:24px;
+    height:24px;
+    background-position: 0 -430px;
+    position:relative;
+}
+.btn_danmuu_number{
+    width:20px;
+    height:8px;
+    color:white;
+    display:inline-block;
+    position:absolute;
+    font-size:8px;
+    top:-7px;
+    right:-7px;
+}
+
+.btn_close{
+    width:74px;
+    height:26px;
+    background-position: 0 -282px;
+}
+.btn_open{
+    width:74px;
+    height:26px;
+    background-position: 0 -311px;
+}
+.btn_voice{
+    width:26px;
+    height:21px;
+    background-position: 0 -144px;
+}
+.btn_voice_width{
+    opacity:0.6;
+    border: 1px solid white;
+    width:80px;
+    position:relative;
+    top:-10px;
+    left:-15px;
+}
+.btn_voice_close{
+    width:26px;
+    height:21px;
+    background-position: 0 -182px;
+}
+.btn_voice_dotted{
+    display:inline-block;
+    border:4px solid white;
+    border-radius: 50px;
+    position:absolute;
+    top:11px;
+    right:20px;
+}

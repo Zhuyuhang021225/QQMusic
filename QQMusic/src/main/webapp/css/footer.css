@@ -1,0 +1,203 @@
+/*所有a的样式初始化*/
+#footer{
+    background: #333;
+}
+a{
+    color:#999;
+    font-size:12px;
+}
+a:hover{
+    cursor:pointer;
+    color:#31c27c;
+}
+li{
+    text-align: center;
+}
+.footer{
+    border:0px none;
+    background:#333;
+    height:643.5px;
+    width: 100%;
+}
+.footer_info{
+    border:0px none;
+    width:1200px;
+    height:100%;
+    margin: auto;
+}
+.footer_tit{
+    font-size:14px;
+    color:#999;
+    font-weight:400;
+    padding-left:30px;
+    padding-bottom:50px;
+}/*section_inner的样式*/
+.section_inner{
+    margin-left:49px;
+    height:589px;
+}
+.footer_download{
+    position: relative;
+    top:-62px;
+    padding-top:80px;
+    display:inline-block;
+    
+    
+}
+.footer_download_list>li{
+    display:inline-block;
+   
+    text-align:center;
+}
+.footer_download_list>li>a:hover{
+    cursor:pointer;
+    color:#31c27c;
+}
+.js_footer_down>i,.js_other_link>i{
+    background-image:url("../img/footer.png");
+    display: block;
+    height:48px;
+    margin:0px 29px 12px 29px;
+}
+.js_footer_down>i:hover{
+    cursor:pointer;
+    background-position-y: -49px;
+}
+.icon_qm_pc{
+    width: 37px;
+}
+
+.icon_qm_mac{
+    width: 46px;
+    background-position: -92px 0;
+}
+.icon_qm_android{
+    width: 37px;
+    background-position: -190px 0;
+   
+}
+.icon_qm_iphone{
+  
+    width: 34px;
+    background-position: -279px 0;
+}
+.js_footer_down{
+    color:#999;
+    font-size:12px;
+}
+.footer_download_list{
+    display:inline-block;
+}
+.footer_download_list>li{
+    height:81px;
+}
+/*footer_product_list的样式*/
+.footer_product,.footer_link{
+    display: inline-block;
+   
+}
+.footer_product{
+    width:304px;
+    top:-30px;
+    padding-top:80px;
+    display:inline-block;
+    position: relative;
+    left:60px;
+}
+.footer_product>.footer_tit{
+   
+    width:100%;
+}
+.footer_product>.footer_product_list{
+    width: 100%;
+
+}
+.footer_product>.footer_product_list>li{
+    display:inline-block;
+    margin-bottom:10px;
+}
+.footer_product>.footer_product_list>li>a>i{
+    background-image: url("../img/footer.png");
+    display:block;
+    height:48px;
+}
+.footer_product_list i:hover{
+    cursor:pointer;
+    background-position-y: -49px;
+}
+.icon_qm_kg{
+    width:41px;
+    background-position: -370px 0;
+}
+
+.icon_qm_ss{
+    width:37px;
+    background-position: -463px 0;
+}
+.icon_qm_qp{
+    width:40px;
+    background-position: -563px 0;
+}
+.footer_product>.footer_product_list>.other_li{
+    width:100px;
+    height:20px;
+}
+/*合作链接*/
+.footer_link{
+    width:300px;
+    height:337px;
+    display: inline-block;
+    position:relative;
+    top:-62px;
+    left: 100px;
+    padding-top:90px;
+    box-sizing: border-box;
+
+}
+.footer_link_list{
+    position:relative;
+    top:35px;
+}
+.footer_link_list>li{
+    width: 95px;
+    height:30px;
+    line-height: 30px;
+    text-emphasis: center;
+    display: inline-block;
+}
+.footer_link>.footer_tit{
+    position:relative;
+    top:35px;
+    
+}
+/*开放平台*/
+.footer_platform{
+    width:1200px;
+    height:148px;
+    position:relative;
+    top:-50px;
+}
+.footer_platform>.footer_platform_list{
+    width:600px;
+    padding-left:10px;
+}
+.footer_platform>.footer_platform_list>li{
+    height:23px;
+    display: inline-block;
+    padding:0px 20px;
+}
+/*尾部*/
+.footer_copyright{
+    width:1200px;
+    height:132px;
+    margin: auto;
+    text-align: center;
+    line-height: 28px;
+    padding: 24px 0;
+    font-size: 12px;
+    position:relative;
+    top:-110px;
+}
+.footer_copyright>p{
+    color:#999;
+}

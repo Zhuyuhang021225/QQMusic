@@ -1,0 +1,84 @@
+#background_img{
+    width:100%;
+    overflow: 922px;
+    background: url("../img/bj/bg_profile_unlogin.jpg");
+}
+.section_inner_listen{
+    width:1200px;
+    height:208px;
+    border:1px solid transparent;
+    margin:auto;
+    transition:all 0.5s linear;
+}
+.title_love_listen{
+    text-align: center;
+    background: url("../img/myMusic/love_listen.png");
+    width: 735px;
+    height: 64px;
+    margin:auto;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+    color:#fff;
+}
+.title_love_x{
+    width:345px;
+    height:30px;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    background: url("../img/myMusic/profile_tit.png");
+    background-position: 0 -70px;
+}
+.myMusic_btn{
+    width:128px;
+    height:48px;
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 3px;
+    line-height: 44px;
+}
+.myMusic_btn:hover{
+    color:#fff;
+}
+.floor{
+    position:fixed;
+    right: 40px;
+    bottom:40px;
+    width: 40px;
+    height:126px;
+}
+.floor>li{
+    width:40px;
+    height:40px;
+    margin-top:2px;
+    background-color: #ededed;
+    text-align:center;
+    position: relative;
+    cursor: pointer;
+}
+[data-index="0"]{
+   visibility: hidden;
+}
+[data-index="1"]{
+    font-size:14px;
+    line-height: 40px;
+    color:#333;
+}
+[data-index]>div{
+    width:20px;
+    height:20px;
+    background:url("../img/logo/icon_sprite.png");
+    position:absolute;
+    left: 10px;
+    top:10px;
+}
+[data-index="2"]>div{
+    background-position: -180px 0;
+}
+[data-index="0"]>div{
+    background-position: -159px 5px;
+}

@@ -1,0 +1,170 @@
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input{
+     margin:0; padding:0;
+}
+button,input{
+    border:0 none;
+    outline:0 none;
+}
+h1,h2,h3,h4,h5,h6{ 
+    font-size:100%; font-weight:normal;
+}
+ol,ul{ list-style:none;}
+img,fieldset{ border:0 none; display:block;}
+header{
+    width:100%;
+    height:142px;
+}
+#header_nav{
+    width:1200px;
+    margin:auto;
+    height:90px;
+    border-bottom:1px #ddd solid;
+    position:relative;
+}
+.header_logo{
+    width:170px;
+    height:46px;
+    margin:22px 30px 22px 0;
+    display:inline-block;
+    cursor:pointer;
+}
+.header_logo>img{
+    width:100%;
+}
+#header_ul_nav{
+    width:436px;
+    height:90px;
+    padding:0px;
+    display:inline-block;
+    font-size:18px;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+    position:relative;
+    top:-38px;
+}
+#header_ul_nav>li{
+    display:inline-block;
+    text-align: center;
+    line-height:90px;
+    padding: 0px 15px;
+    cursor:pointer;
+}
+#header_ul_nav>li:hover{
+    color: #31c27c;
+}
+#header_ul_nav>.nav_current{
+    background:#31c27c;
+    color: #fff;
+}
+#header_ul_nav>.nav_current:hover{
+    color: #fff;
+}
+/*搜索框样式*/
+#search_nav{
+    width:220px;
+    height:90px;
+    padding-top:26px;
+    display:inline-block;
+    position:relative;
+    top:-38px;
+    
+}
+#search_nav input{
+    width:174px;
+    height:38px;
+    text-align: left;
+    border:1px #ddd solid;
+    border-top-left-radius:5%;
+    border-bottom-left-radius:5%;
+    border-right:0px;
+   
+    /* border-radius:5px; */
+    /* border-right:0px; */
+}
+#search_nav button{
+    background:#fff;
+    border:1px #ddd solid;
+    border-left:0 none;
+    border-top-right-radius:5%;
+    border-bottom-right-radius:5%;
+    height:38px;
+    width:35px;
+    position:relative;
+    top:1px;
+    left:-5px;
+}
+#search_nav button span{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    background-image:url("../img/logo/icon_sprite.png");
+    background-position-y:-40px;
+}
+#search_nav button span:hover{
+    background-position-y:-60px;
+    cursor:pointer;
+}
+#login,#greenZ,#fufei{
+    position:relative;
+    top:-38px;
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+#login{
+    font-size:16px;
+    background:#fff;
+    padding-left:9px;
+    padding-right:9px;
+}
+#login:hover{
+    color:#31c27c;
+    cursor:pointer;
+}
+#greenZ,#fufei{
+    border-radius:5%;
+    height:38px;
+    padding:9px;
+    line-height:20px;
+    font-size:13px;
+    cursor:pointer;
+}
+/*nav两按钮*/
+#greenZ{
+   
+    background:#31c27c;
+    color:#fff;
+}
+#greenZ:hover{
+    background:#2b9b65
+}
+
+#fufei{
+    background:#fff;
+    border:1px solid #c9c9c9;
+    color:black;
+    box-sizing:border-box;
+}
+#fufei:hover{
+    background:#ebe2eb;
+}
+.mod_top_subnav{
+    width:1020px;
+    height:51px;
+    margin:auto;
+    padding-left:180px;
+    display: block;
+}
+.mod_top_subnav>li{
+    display:inline-block;
+    padding:15px;
+    font-size: 15px;
+   
+}
+.mod_top_subnav>li>.top_subnav_link{
+    color: #333;
+}
+.mod_top_subnav>li>.top_subnav_link:hover{
+    color:#31c27c;
+}
+.mod_top_subnav>li>.link_current{
+    color:#31c27c;
+}
+/* 歌单简介 */

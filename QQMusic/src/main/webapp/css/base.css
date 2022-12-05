@@ -1,0 +1,25 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+li{list-style:none;}
+input[type=radio]{cursor: pointer}
+input[type=checkbox]{cursor: pointer}
+*{
+    box-sizing: border-box;
+    font-family:poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+a{  text-decoration:none;
+    font-size:15px;
+    color:#000;
+}
+body{
+
+    -webkit-user-select: none;
+    
+      -moz-user-select: none;
+    
+      -ms-user-select: none;
+    
+      user-select: none; 
+    
+    }

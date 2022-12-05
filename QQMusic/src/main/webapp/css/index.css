@@ -1,0 +1,451 @@
+/* 头部尾部的大小 */
+#header{
+    width:100%;
+    height:158px;
+}
+#footer{
+    width:100%;
+    height:589px;
+
+}
+/* banner的样式 */
+.ban_sec{
+    width:100%;
+    height:450px;
+}
+#banner{
+    width:1200px;
+    margin:auto;
+}
+#banner>.wrap>.ban{
+    width:800px;
+    height:320px;
+    z-index: 10;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    z-index:10;
+    cursor:pointer;
+    display:inline-block;
+}
+#banner>.wrap{
+    width:800px;
+    height:320px;
+    margin:auto;
+    margin-bottom:8px;
+    perspective: 1300px;
+    
+}
+#banner>.wrap>.ban>img{
+    width:100%;
+    box-shadow: 0px 5px 50px rgba(15, 15, 15, 1);
+    box-sizing: border-box;
+
+}
+#banner>.ban>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 图片两侧的透明按钮 */
+.xx{
+    width:800px;
+    height:320px;
+    transform-origin: 50% 50% -966.685px; 
+    z-index:101;
+    cursor:pointer;
+    background: transparent;
+}
+.ban_left{
+    position:absolute;
+    transform: rotateY(-45deg); 
+}
+.ban_right{
+    position:relative;
+    transform: rotateY(45deg);
+    top:-323px;
+}
+/* 标题 */
+.index__hd{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width:1200px;
+    height:75px;
+    margin:auto;
+}
+.index__tit{
+    width:200px;
+    height:40px;
+    margin:auto;
+    text-align: justify;
+    font-family:poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+    font-style:normal;
+    font-size:30px;
+    font-weight:normal;
+}
+.index__tit>.icon_txt{
+    display:inline-block; /*padding-left: 100%;*/width:100%;
+}
+/* 两侧按钮 */
+.ban_btn{
+    width:100%;
+    position:relative;
+    top:161px;
+    z-index:10;
+}
+.ban_btn>i{
+    width: 79px;
+    height:108px;
+    background-color: #ccc;
+    opacity: 0.4;
+    border-radius: 5px;
+    position:relative;
+    transition: all 0.5s linear;
+    cursor:pointer;
+}
+.ban_btn>i:hover{
+    opacity:0.7;
+}
+.previous{
+    float:left;
+    left:-80px;
+}
+.previous>.btn_img{
+    background-position: -20px -120px;
+}
+.next{
+    float:right;
+    right:-80px;
+}
+.next>.btn_img{
+    background-position: 0 -120px;
+}
+.btn_img{
+    margin:35px auto 0px;
+    width:20px;
+    height:39px;
+    background: url("../img/logo/icon_sprite.png");
+}
+/*歌曲,歌单下面的按钮*/
+.ban_ul{
+    width:360px;
+    height:10px;
+    margin:auto;
+}
+.gedan_ul{
+    width:100px;
+    height:10px;
+    margin:auto;
+}
+.ban_ul>li,.gedan_ul>li{
+    width:10px;
+    display:inline-block;
+    height:10px;
+    border-radius:50px;
+    background:  rgba(0,0,0,0.2);
+    margin:0 15px 0 15px;
+}
+.ban_ul>li:hover,.ban_ul>.active,.gedan_ul>li:hover,.gedan_ul>.active{
+    background:  rgba(0,0,0,0.6);
+    cursor:pointer;
+}
+/* 歌单样式 */
+#gedan{
+    width:100%;
+    height:532px;
+    background: linear-gradient(#eee,#fff ,#fff); 
+    padding-top:20px;
+}
+.a_ul{
+    width:700px;
+    height:20px;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:45px;
+}
+.a_ul>li{
+    display:inline-block;
+    width:110px;
+    height:20px;
+    text-align: center;
+}
+
+.a_ul>li>a:hover,.a_ul>li>.a_ul_hover{
+    color: #31c27c;
+    cursor:pointer;
+}
+.gedan_list_body{
+    width:1200px;
+    height:310px;
+    overflow: hidden;
+    margin:auto;
+}
+.gedan_list{
+    width:3600px;
+    height:310px;
+    font-size:0px;
+    overflow: hidden;
+    position:relative;
+    left: 0px;
+}
+.gedan_border{
+    width:224px;
+    height:310px;
+    display:inline-block;
+    margin:0px 7.5px; 
+}
+.gedan_list_x{
+    width:224px;
+    height:224px;
+    display:inline-block;
+    position: relative;
+    /* 覆盖不了,用relative解决 */
+    overflow: hidden;
+    cursor:pointer;
+    border-radius: 3px;
+}
+
+.gedan_list_x>.gedan_mask{
+    position:absolute;
+    width:224px;
+    height:224px;
+    background:#000;
+    opacity: 0;
+    transition: all 0.35s;
+    z-index:5;
+}
+.gedan_list_x>.mask_active{
+    opacity: 0.2;
+}
+.gedan_mask:hover{
+    opacity: 0.2;
+}
+.gedan_list_1{
+    width:1200px;
+    height:310px;
+    display:inline-block;
+}
+.gedan_list_2{
+    width:1200px;
+    height:310px;
+    margin:auto;
+    display:inline-block;
+}
+.gedan_bk{
+    position: absolute;
+    width:224px;
+    height:224px;
+    overflow: hidden;
+    background-size: 100%;
+    transition: all 0.5s linear;
+    transform: scale(1);
+}
+.gedan_bk>img{
+    position:absolute;
+    width:224px;
+}
+.bk_active{
+    transform: scale(1.1);
+}
+.gedan_icon{
+    position:absolute;
+    width:0px;
+    height:0px;
+    opacity: 1;
+    transform-origin: 50% 50%;
+    background: url("../img/gedan/cover_play.png");
+    background-size: 100% 100%;
+    left:112px;
+    top:112px;
+    transition: all 0.5s linear;
+    cursor:pointer;
+    z-index:99;
+}
+.gedan_icon:hover,.icon_active{
+    left:77px;
+    top:77px;
+    width:70px;
+    height:70px;
+    transform-origin: 50% 50%;
+}
+/* 歌单标题 */
+.list_title{
+    width:210px;
+    height:22px;
+    display:inline-block;
+    line-height:22px;
+    color:#333;
+    font-size:15px;
+    margin-top:12px;
+    margin-bottom: 12px;
+}
+.list_title:hover{
+    color:#31c27c;
+    cursor: pointer;
+}
+.title_txt{
+    font-size:14px;
+    display: block;
+    width:210px;
+    height:22px;
+    color:#999;
+}
+/* 歌单按钮 */
+#gedan>.gedan_btn{
+    width:100%;
+    position:relative;
+    top:266px;
+    z-index:10;
+}
+#gedan>.gedan_btn>i{
+    width: 79px;
+    height:108px;
+    background-color: #ccc;
+    opacity: 0.4;
+    border-radius: 5px;
+    position:absolute;
+    transition: all 0.5s linear;
+    cursor:pointer;
+}
+#gedan>.gedan_btn>i:hover{
+    opacity:0.7;
+}
+/* 排行榜 */
+#rank{
+    padding-top:30px;
+    width:100%;
+    height:680px;
+    background: linear-gradient(#eee,#fff ,#fff); 
+    position:relative;
+}
+.rank_body{
+    width:1200px;
+    height: 500px;
+    margin: auto;
+    font-size:0px;
+    perspective: 1300px;
+    position:relative;
+}
+.rank_div{
+    display: inline-block;
+    width:218px;
+    height:500px;
+    margin-left:10px;
+    margin-right:10px;
+    background:url("../img/rank/rank.jpg");
+    position:relative;
+    transition: all 0.25s linear;
+    box-shadow: 0px 5px 20px rgba(15, 15, 15, 1);
+}
+.rank_div:hover{
+    transform: scale(1.08);
+}
+.rank_img_1{
+    background-position: 0 0;
+}
+.rank_img_2{
+    background-position: -224px 0;
+}
+.rank_img_3{
+    background-position: -448px 0;
+}
+.rank_img_4{
+    background-position: -672px 0;
+}
+.rank_img_5{
+    background-position: -896px 0;
+}
+.rank_hd{
+    display:inline-block;
+    height:57px;
+    width:200px;
+    position:relative;
+    top:80px;
+    left:14px;
+    text-align: center;
+}
+.rank_hd>.rank_tit{
+    display:inline-block;
+    height:36px;
+    line-height: 1;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 400;
+    margin:auto;
+}
+.rank_top{
+    width:66px;
+    height:22px;
+    margin-top:49px;
+    background: url(../img/rank/index_tit.png);
+    background-position:0px -300px;
+    position: absolute;
+    margin-left:80px;
+}
+.rank_icon{
+    display: inline-block;
+    position: absolute;
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    top:134px;
+    left:89px;
+    background: url("../img/gedan/cover_play.png");
+    background-size: 100% 100%;
+    transition: all 0.25s linear;
+    opacity: 0;
+    z-index:99;
+}
+.rank_icon:hover{
+    cursor: pointer;
+}
+.rank_x{
+    display: block;
+    position:absolute;
+    width:42px;
+    height:2px;
+    border:1px solid #fff;
+    top:158px;
+    left:93px;
+}
+.rank_songlist{
+    width:164px;
+    height:300px;
+    position:absolute;
+    top:188px;
+    left:30px;
+}
+.rank_song{
+    width:164px;
+    height:49px;
+    margin-bottom: 20px;
+}
+.rank_song>.rank_songname>a,.rank_artist>a{
+    color:#fff;
+    display: inline-block;
+    font-size:13px;
+    height:21px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    width:130px;
+}
+.rank_song>.rank_songname>a:hover,.rank_artist>a:hover{
+    color:rgb(247, 241, 241);
+    cursor:pointer;
+}
+
+.rank_song>.rank_number{
+    display:inline-block;
+    height:21px;
+    font-size:14px;
+    color: #fff;
+}
+.rank_songname{
+    display: inline-block;
+    margin-left:5px;
+    margin-bottom: 12px;
+}
+.rank_artist{
+    margin-left:12px;
+}

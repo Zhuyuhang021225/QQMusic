@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/xampp/htdocs/My_Project/playMusic.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正在播放...</title>
+    <link rel="stylesheet" href="./正在播放..._files/playMusic.css">
+    <link rel="stylesheet" href="./正在播放..._files/base.css">
+ 	<link rel="icon" href="file:///C:/xampp/htdocs/My_Project/img/logo/favicon-20180629082227958.ico" type="image/x-icon">
+   <style>
+       .player_body>.song_text{
+    width:340px;
+    height:400px;
+}
+   </style>
+</head>
+<body scroll="no">
+    <div class="top_icon"><img src="./正在播放..._files/title.png" alt=""></div>
+    <img class="play_mask_img" src="./正在播放..._files/017.jpg">
+    <div class="play_mask"></div>
+    <div class="player_body" style="padding-left: 115.2px; padding-right: 115.2px;">
+        <div class="player_bd">
+            <div class="toolbar">
+                <a href="javascript:;" class="mod_btn like"><i class="icon_like"></i>收藏</a>
+                <a href="javascript:;" class="mod_btn add"><i class="icon_add"></i>添加到</a>
+                <a href="javascript:;" class="mod_btn download"><i class="icon_down"></i>下载</a>
+                <a href="javascript:;" class="mod_btn delete"><i class="icon_delete"></i>删除</a>
+				<a href="javascript:;" class="mod_btn clear"><i class="icon_clear"></i>清空列表</a>
+            </div>
+            <div id="songList">
+                <div class="song_list">
+                    <ul class="song_title">
+                        <li class="songlist_edit sprite">
+                            <a class="songlist_checkbox js_check_all"></a>
+                        </li>
+                        <li class="songlist_header_name">歌曲</li>
+                        <li class="songlist_header_author">歌手</li>
+                        <li class="songlist_header_time">时长</li>
+                    </ul>
+                    <ul class="songlist_list">
+                        <!-- <li>
+                            <div>
+                                <div class="songlist_show">
+                                    <a class="songlist_checkbox js_check_all"></a>
+                                    <a class="list_number">1</a>
+                                </div>
+                                <div class="songlist_list_name">歌曲</div>
+                                <div class="songlist_list_author">歌手</div>
+                                <div class="songlist_list_time">时长</div>
+                            </div>
+                        </li>  -->
+                    </ul>
+                </div>
+            </div>
+            <div class="song_pic">
+                <div class="song_pic_a">
+                    <img src="./正在播放..._files/017.jpg" id="song_pic_img" alt="">
+                    <div class="song_pic_bg"></div>
+                </div>
+                <div class="song_pic_div" id="song_pic_title">歌曲名: 我的未来式</div>
+                <div class="song_pic_div" id="song_pic_singer">歌手名: 爱情公寓</div>
+                <div class="song_pic_div">专辑名:巅峰热歌榜</div>
+            </div>
+            <div class="song_lrc">
+                <div class="qrc_ctn" id="qrc_ctn" data-mod="1" style="transition: all 0.1s ease-out; top: -128px;">
+                    <p data-id="line_null" style="color: rgba(255, 255, 255, 0.6);">&nbsp;</p>
+                    <p data-id="0" class="" style="color: rgba(255, 255, 255, 0.6);">我的未来式 (《爱情公寓》十周年合唱版) - 爱情公寓全体</p>
+                    <p data-id="1" style="color: rgba(255, 255, 255, 0.6);">词：刘伟恩</p>
+                    <p data-id="2" style="color: rgba(255, 255, 255, 0.6);">曲：JEON/JUN GYU</p>
+                    <p data-id="3" style="color: rgb(49, 194, 124);">编曲：徐肖</p>
+                    <p data-id="4">音乐制作人：张志林</p>
+                    <p data-id="5" class="">MV导演/改编：韦正</p>
+                    <p data-id="6">吉他：李庭匡</p>
+                    <p data-id="7">鼓：陈柏州/MR.Q</p>
+                    <p data-id="8" class="">录音师/录音棚：葛亮-林腾录音棚</p>
+                    <p data-id="9">混音师/混音棚：Andrew C/LinkTune studio</p>
+                    <p data-id="10">OP：WARNER CHAPPELL MUSIC KOREA INC</p>
+                    <p data-id="11" class="">SP：Warner/Chappell Music Publishing Agency (Beijing) Ltd.</p>
+                    <p data-id="12" class="">脱下鞋子跳舞</p>
+                    <p data-id="13" class="">赤着脚太空漫步</p>
+                    <p data-id="14" class="">我笑了你还装酷</p>
+                    <p data-id="15" class="">阳光晒过的路</p>
+                    <p data-id="16" class="">正好是年轻的温度</p>
+                    <p data-id="17">温暖舒服</p>
+                    <p data-id="18" class="">吵醒了闹区的树木</p>
+                    <p data-id="19" class="">吸一口纯氧就漂浮</p>
+                    <p data-id="20" class="">蓝色背景下我练习飞行的角度</p>
+                    <p data-id="21" class="on">保持我的态度</p>
+                    <p data-id="22">我的未来式 由我做主</p>
+                    <p data-id="23">跳整天的舞 玩耍整片荧幕</p>
+                    <p data-id="24">不断电的梦 直线加速</p>
+                    <p data-id="25">奔跑在我画的地图</p>
+                    <p data-id="26">谢谢你对我微笑</p>
+                    <p data-id="27">十年相伴 这一路</p>
+                    <p data-id="28">每一步 每一步</p>
+                    <p data-id="29">我的未来式 由我做主</p>
+                    <p data-id="30">每一个动作 我都完整投入</p>
+                    <p data-id="31">不断电的你 陪我加速</p>
+                    <p data-id="32">奔跑在我们的领土</p>
+                    <p data-id="33">我的未来式 由我做主</p>
+                    <p data-id="34">每一个动作 我都完整投入</p>
+                    <p data-id="35">不断电的你 陪我加速</p>
+                    <p data-id="36">奔跑在我们的领土</p>
+                </div>
+            </div>
+            <div class="song_ctrl">
+                <a class="song_prev"></a>
+                <a class="song_play js_play"></a>
+                <a class="song_next"></a>
+                <div class="song_text">
+                    <a class="song_text_song">答案</a>
+                      - 
+                    <a class="song_text_singer">杨坤/郭采洁</a>
+                    <a class="song_text_time">03:51</a>
+                </div>
+                <div class="player_progress" id="progress">
+                    <div class="player_progress_inner" id="spanplayer_bgbar">
+                        <div class="player_progress_play" style="width: 82%;" id="spanplaybar"><i class="player_progress_dot" id="spanprogress_op"></i></div>
+                    </div>
+                </div>
+                <div class="song_ctrl_btn">
+                    <a class="btn_style"></a>
+                    <a class="btn_unlike js_like"></a>
+                    <a class="btn_down"></a>
+                    <a class="btn_danmu">
+                        <span class="btn_danmuu_number">
+                            365
+                        </span>
+                    </a>
+                    <a class="btn_close js_only"></a>
+                    <a class="btn_voice js_voice"></a>
+                    <a class="btn_voice_width">
+                        </a><a class="btn_voice_dotted"></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./正在播放..._files/jquery-1.11.3.js.下载"></script>
+    <script src="./正在播放..._files/playMusic.js.下载"></script>
+    <script src="./正在播放..._files/common.js.下载"></script>
+
+</body></html>

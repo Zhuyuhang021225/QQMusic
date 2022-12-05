@@ -1,0 +1,313 @@
+@keyframes star{
+    0%{opacity:0;transform:translate(216px,-304px)}
+    12%{opacity:1;transform:translate(108px,-152px)}
+    100%,24%{opacity:0;transform:translate(0,0)}
+}
+@keyframes watch_hand{
+    0% {
+        transform: rotate(-252deg);
+    }
+    70% {
+        transform: rotate(3deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes watch_num1{
+    0%{background-position:0 0}
+    100%{background-position:0 -300px}
+}
+@keyframes watch_num2{
+    0%{background-position:0 0}
+    100%{background-position:0 -500px}
+}
+body{
+    height:974px;
+    overflow-x: hidden;
+}
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,.3);
+    overflow: hidden;
+    z-index: 3;
+}
+.nav_body{
+    width:1024px;
+    height:80px;
+    margin:auto;
+    padding-top: 17px;
+}
+#nav_logo{
+    width:159px;
+    height:46px;
+    float:left;
+    margin-right:80px;
+    background-image: url("../img/logo/logo.png");
+    background-size: 100%;
+}
+#nav_logo:hover{
+    cursor:pointer;
+}
+.nav_product,.nav_down{
+    margin-right:50px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 80px;
+    line-height: 40px;
+    float:left;
+}
+.nav_active{
+    color:#31c27c;
+}
+.nav_product:hover,.nav_down:hover{
+    cursor:pointer;
+}
+.nav_down{
+    margin-right: 210px;
+}
+.nav_int{
+    margin:0 10px;
+    float:left;
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+.nav_int{
+    cursor:pointer;
+}
+/* 身体 */
+.container{
+    height:100%;
+    width:100%;
+}
+#bj{
+    width: 100%;
+    height:100%;
+    position: absolute;
+}
+#bj>div{
+    width:100%;
+    height:100%;
+}
+.bj_pc{
+    background-image: url("../img/bj/bj.jpg");
+}
+.bj_mac{
+    background-image: url("../img/bj/banner_mac.jpg");
+}
+.bj_iphone{
+    background-image: url("../img/bj/iphone_play_1.jpg");
+    transition: all 0.5s linear;
+}
+.bj_android{
+    background-image: url("../img/bj/banner_android.jpg");
+}
+.bj_mask{
+    background-color:#000;
+    z-index:2;
+    width:100%;
+    height:100%;
+    position:absolute;
+    opacity:0;
+}
+.con_box{
+    width:1024px;
+    height:600px;
+    margin:auto;
+    position:relative;
+    top: 150px;
+    z-index:10;
+}
+
+.box_hidden{
+    display:none;
+}
+.watch{
+    position: absolute;
+    top: 30px;
+    width: 476px;
+    height: 478px;
+    background: url("../img/down/watch_bg.png") 0 0 no-repeat;
+}
+.watch_hand{
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    width: 131px;
+    height: 105px;
+    background-image: url(../img/down/img_index.png);
+    background-position: -448px -824px;
+    transform-origin: 24px 24px;
+    animation: watch_hand 2s ease-in-out  both;
+}
+.watch_num1 {
+    position: absolute;
+    top: 320px;
+    left: 204px;
+    width: 40px;
+    height: 50px;
+    background-image: url(../img/down/watch_numb.png);
+    animation: watch_num1 1.5s  steps(6) both;
+    
+}
+.watch_num2 {
+    position: absolute;
+    top: 320px;
+    left: 248px;
+    width: 40px;
+    height: 50px;
+    background-image: url(../img/down/watch_numb.png);
+    background-position: 0 -500px;
+    animation: watch_num2 0.5s steps(10) 3;
+}
+.con_title{
+    position: absolute;
+    top: 70px;
+    right:0px;
+    text-indent: -99em;
+    overflow: hidden;
+    background-image: url(../img/down/img_index.png);
+    z-index: 3;
+    transform: scale(0.85);
+}
+.title1{
+    width: 578px;
+    height: 214px;
+    background-position: 0 0;
+}
+.title2{
+    width: 623px;
+    height: 145px;
+    right:-60px;
+    background-position: -580px 0;
+}
+.title3{
+    width: 370px;
+    height: 159px;
+    right:110px;
+    background-position: 0 -664px;
+}
+.title4{
+    width: 520px;
+    height: 149px;
+    background-position: -556px -361px;
+}
+.con_load{
+    position: absolute;
+    top: 290px;
+    right:150px;
+    width: 293px;
+    height: 69px;
+    text-indent: -99em;
+    overflow: hidden;
+    z-index: 9;
+    background-image: url(../img/down/img_index.png);
+    background-position: -372px -735px;
+}
+/* 星星 */
+.star{
+    position: absolute;
+    width:108px;
+    height:152px;
+    background-image: url("../img/down/star.png");
+    animation: star 4.5s both infinite linear;
+    z-index:11;
+}
+.star1{
+    top:380px;
+    left:20px;
+    animation-delay: 3s;
+}
+.star2{
+    top:320px;
+    right:100px;
+    animation-delay: 1s;
+}
+.star3{
+    top:260px;
+    left:50%;
+    animation-delay: 1.4s;
+}
+.star4{
+    top:200px;
+    left: 50%;
+    margin-left:200px;
+    animation-delay: 2s;
+}
+.star5{
+    top: 640px;
+    left: 50%;
+    margin-left: -400px;
+    animation-delay: 3s;
+}
+.star6{
+    top: 400px;
+    left: 50%;
+    animation-delay: 4s;
+    margin-left: 400px;
+}
+/* 尾部 */
+#footer{
+    width:100%;
+    height:190px;
+    position:absolute;
+    bottom:0px;
+    z-index:100;
+}
+
+.footer_hr{
+    position: absolute;
+    bottom:190px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.12;
+    filter: alpha(opacity=12);
+    overflow: hidden;
+}
+.foot_list{
+    width:1024px;
+    height:189px;
+    margin:auto;
+}
+.foot_list>li{
+    display: inline-block;
+    width: 110px;
+    height:170px;
+    padding-bottom:19px;
+    margin-right:185px;
+    background-image: url("../img/down/img_index.png");
+    opacity: 0.5;
+}
+.foot_list>li:hover,.foot_list>.footer_hover{
+    opacity: 1;
+    cursor:pointer;
+    border-top:1px solid #fff;
+}
+.foot_list>.footer_android{
+    margin-right:0px;
+}
+.footer_pc{
+    background-position: -336px -824px;
+}
+.footer_iphone{
+    background-position: -112px -824px;
+}
+.footer_mac{
+    background-position:  -224px -824px;
+}
+.footer_android{
+    background-position:  0 -824px;
+}
